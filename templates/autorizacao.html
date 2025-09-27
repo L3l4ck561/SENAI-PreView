@@ -11,10 +11,14 @@
 
 <body>
     <header>
-        <div class="title">
+        <div class="title" style="flex: 3;">
             <h1>SENAI</h1>
         </div>
+        <div>
+            <button onclick="teste()" id="btn-menu"><img src="../static/img/menu.svg" width="40px" alt="Menu"></button>
+        </div>
     </header>
+    
     <main>
         <div class="container">
             <div style="text-align: center;color: #460739;">
@@ -62,6 +66,24 @@
                     <button type="submit" style="margin-bottom: 20px;" id="btnform">Enviar</button>
                 </div>
             </form>
+        </div>
+        <div id="title-menu" style="display: none; opacity: 0;transition: 0.5s;">
+            <h1>Bem vindo ao Menu!</h1>
+            <p>Aqui é apresentado a sua conta, e os acessos que possuí.</p>
+        </div>
+        
+        <div class="container menu">
+            <div class="item-menu it1" style="display: flex;flex-direction: column;">
+                <div style="flex: 3;">
+                    <h3>Usuário: 'rodrigo pinto dos santos'</h3>
+                    <p>Cargo: predeiro</p>
+                </div>
+                <button id="sair-login">Sair</button>
+            </div>
+            <div class="item-menu"></div>
+            <div class="item-menu"></div>
+            <div class="item-menu"></div>
+            <div class="item-menu"></div>
         </div>
     </main>
     <footer>
